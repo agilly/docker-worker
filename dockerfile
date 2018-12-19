@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get install -y apt-utils python python-pip python3 nano wget iputils-ping git yum gcc gfortran libc6 libc-bin libc-dev-bin make libblas-dev liblapack-dev libatlas-base-dev libatlas-dev curl zlib1g zlib1g-dev libbz2-1.0 libbz2-dev libbz2-ocaml libbz2-ocaml-dev liblzma-dev lzma lzma-dev
 
 #RUN wget https://www.cog-genomics.org/static/bin/plink171114/plink_linux_x86_64.zip
-#RUN apt-get install -y git yum gcc gfortran libc6 libc-bin libc-dev-bin make libblas-dev liblapack-dev libatlas-base-dev libatlas-dev curl
+#RUN apt-get install -y git yum gcc gfortran libc6 libc-bin libc-dev-bin make libblas-dev liblapack-dev libatlas-base-dev curl
 
 RUN git clone https://github.com/chrchang/plink-ng.git
 WORKDIR /plink-ng/1.9
